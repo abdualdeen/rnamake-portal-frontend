@@ -11,7 +11,8 @@
 - Auto Rename Tag
 
 - ESLint
-
+    - run `npm install eslint`
+    - install vscode extension
 
 ## Recommended But Not Requried
 
