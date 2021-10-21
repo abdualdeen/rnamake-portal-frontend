@@ -1,6 +1,6 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Footer, Home, About, Contact } from "./index.js";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Navigation, Footer, Home, About, Contact } from './index.js';
 import helix from './Graphics/helix.svg';
 import './App.css';
 
