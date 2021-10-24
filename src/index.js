@@ -12,10 +12,10 @@ ReactDOM.render(
 
 );
 export { default as Navigation } from './components/Navigation';
-// export { default as Footer } from "./components/Footer";
 export { default as Home } from './components/Home';
 export { default as About } from './components/About';
 export { default as Contact } from './components/Contact';
+export { default as Documentation } from './components/Documentation';
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
