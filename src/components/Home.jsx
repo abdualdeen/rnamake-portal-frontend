@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 
 function Home() {
-  return (
+    return (
         <div className="home">
             <div class="container">
                 <div class="row align-items-center my-5">
@@ -24,7 +24,7 @@ function Home() {
                 </div>
             </div>
         </div>
-  );
+    );
 }
 
 export default Home;
