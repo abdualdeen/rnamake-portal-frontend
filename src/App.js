@@ -20,7 +20,7 @@ function App() {
               <img src={helix} className="App-logo" alt="logo" />
             <p>Edit <code>src/App.js</code> and save to reload. </p>
             <a
-              class="App-link"
+              className="App-link"
               href="https://reactjs.org"
               target="_blank"
               rel="noopener noreferrer"

@@ -4,33 +4,39 @@ import { Link, withRouter } from 'react-router-dom';
 function Navigation(props) {
     return (
         <div className="navigation">
-            <nav class="navbar navbar-expand navbar-dark bg-dark">
-                <div class="container">
+            <nav className="navbar navbar-expand navbar-dark bg-dark">
+                <div className="container">
                     <Link class="navbar-brand" to="/">
                         {/* React Multi-Page Website */}
                     </Link>
 
                     <div>
-                        <ul class="navbar-nav ml-auto">
-                            <li class={`nav-item  ${props.location.pathname === '/about' ? 'active' : ''}`}>
+                        <ul className="navbar-nav ml-auto">
+                            <li className={`nav-item  ${props.location.pathname === "/" ? "active" : ""}`}>
+                                <Link class="nav-link" to="/">
+                                    Home
+                                    <span className="sr-only">(current)</span>
+                                </Link>
+                            </li>
+                            <li className={`nav-item  ${props.location.pathname === "/about" ? "active" : ""}`}>
                                 <Link class="nav-link" to="/about">
                                     About
                                 </Link>
                             </li>
-                            <li class={`nav-item  ${props.location.pathname === '/contact' ? 'active' : ''}`}>
+                            <li className={`nav-item  ${props.location.pathname === "/contact" ? "active" : ""}`}>
                                 <Link class="nav-link" to="/contact">
                                     Contact
                                 </Link>
                             </li>
-                            <li class={`nav-item  ${props.location.pathname === '/Documentation' ? 'active' : ''}`}>
+                            <li className={`nav-item  ${props.location.pathname === '/Documentation' ? 'active' : ''}`}>
                                 <Link class="nav-link" to="/Documentation">
                                     Documentation
                                 </Link>
                             </li>
-                            <li class={`nav-item  ${props.location.pathname === '/' ? 'active' : ''}`} >
+                            <li className={`nav-item  ${props.location.pathname === '/' ? 'active' : ''}`} >
                                 <Link class="nav-link" to="/">
                                     Home
-                                    <span class="sr-only">(current)</span>
+                                    <span className="sr-only">(current)</span>
                                 </Link>
                             </li>
                         </ul>
