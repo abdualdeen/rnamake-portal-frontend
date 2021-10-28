@@ -6,13 +6,13 @@ function Documentation() {
             <div className="container">
                 <div className="row align-items-center my-5">
                     
-                    <div className="col-lg-5">
+                    <div className="col-lg-8">
                         <a
 
                         >
                             Documentation
                         </a>
-                        <h1 className="font-weight-light">Acknowledged Organizations</h1>
+                        <h1 className="font-weight-light">Acknowledgements</h1>
                         <p>
                             <a
                                 className="App-link"
