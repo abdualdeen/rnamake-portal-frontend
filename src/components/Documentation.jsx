@@ -3,19 +3,19 @@
 function Documentation() {
     return (
         <div className="documentation">
-            <div class="container">
-                <div class="row align-items-center my-5">
+            <div className="container">
+                <div className="row align-items-center my-5">
                     
-                    <div class="col-lg-5">
+                    <div className="col-lg-5">
                         <a
 
                         >
                             Documentation
                         </a>
-                        <h1 class="font-weight-light">Acknowledged Organizations</h1>
+                        <h1 className="font-weight-light">Acknowledged Organizations</h1>
                         <p>
                             <a
-                                class="App-link"
+                                className="App-link"
                                 href="https://nsf.gov/awardsearch/showAward?AWD_ID=1148698"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -24,7 +24,7 @@ function Documentation() {
                             </a>
                             <br></br>
                             <a
-                                class="App-link"
+                                className="App-link"
                                 href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2030508"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -33,7 +33,7 @@ function Documentation() {
                             </a>
                             <br></br>
                             <a
-                                class="App-link"
+                                className="App-link"
                                 href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1053575"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -42,7 +42,7 @@ function Documentation() {
                             </a>
                             <br></br>
                             <a
-                                class="App-link"
+                                className="App-link"
                                 href="https://www.nsf.gov/"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -51,7 +51,7 @@ function Documentation() {
                             </a>
                             <br></br>
                             <a
-                                class="App-link"
+                                className="App-link"
                                 href="https://hcc.unl.edu/hcc"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -60,7 +60,7 @@ function Documentation() {
                             </a>
                             <br></br>
                             <a
-                                class="App-link"
+                                className="App-link"
                                 href="https://nebraska.edu/offices-policies/provosts-office/research/nebraska-research-initiative"
                                 target="_blank"
                                 rel="noopener noreferrer"
