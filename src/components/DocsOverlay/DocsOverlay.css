@@ -1,0 +1,7 @@
+.docs-overlay {
+  align-items: flex-start;
+  background-color: var(--wild-sand);
+  display: flex;
+  width: 239px;
+}
+
