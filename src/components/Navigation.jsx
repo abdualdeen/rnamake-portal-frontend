@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-function Navigation(props) {
+function Navigation() {
     return (
         <div className="navigation">
             <nav className="navbar navbar-expand navbar-dark bg-dark">
@@ -9,31 +9,30 @@ function Navigation(props) {
                     <Link class="navbar-brand" to="/">
                         {/* React Multi-Page Website */}
                     </Link>
-
                     <div>
                         <ul className="navbar-nav ml-auto">
-                            <li className={`nav-item  ${props.location.pathname === "/" ? "active" : ""}`}>
+                            <li className={`nav-item  /home`}>
                                 <Link class="nav-link" to="/">
                                     Home
                                     <span className="sr-only">(current)</span>
                                 </Link>
                             </li>
-                            <li className={`nav-item  ${props.location.pathname === "/about" ? "active" : ""}`}>
+                            <li className={`nav-item  /about`}>
                                 <Link class="nav-link" to="/about">
                                     About
                                 </Link>
                             </li>
-                            <li className={`nav-item  ${props.location.pathname === "/contact" ? "active" : ""}`}>
+                            <li className={`nav-item  /contact`}>
                                 <Link class="nav-link" to="/contact">
                                     Contact
                                 </Link>
                             </li>
-                            <li className={`nav-item  ${props.location.pathname === '/Documentation' ? 'active' : ''}`}>
-                                <Link class="nav-link" to="/Documentation">
+                            <li className={`nav-item  /documentation`}>
+                                <Link class="nav-link" to="/documentation">
                                     Documentation
                                 </Link>
                             </li>
-                            <li className={`nav-item  ${props.location.pathname === '/' ? 'active' : ''}`} >
+                            <li className={`nav-item  /`} >
                                 <Link class="nav-link" to="/">
                                     Home
                                     <span className="sr-only">(current)</span>
