@@ -1,0 +1,8 @@
+.home-overlay {
+  align-items: flex-start;
+  background-color: var(--wild-sand);
+  cursor: pointer;
+  display: flex;
+  min-width: 115px;
+}
+

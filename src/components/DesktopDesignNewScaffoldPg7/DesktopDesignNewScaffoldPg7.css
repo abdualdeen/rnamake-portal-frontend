@@ -1,0 +1,10 @@
+.desktop-design-new-scaffold-pg-7 {
+  align-items: center;
+  background-color: var(--wild-sand);
+  display: flex;
+  flex-direction: column;
+  height: 940px;
+  position: relative;
+  width: 1440px;
+}
+

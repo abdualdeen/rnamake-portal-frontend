@@ -1,0 +1,9 @@
+.executing {
+  align-items: flex-start;
+  background-color: var(--mystic);
+  display: flex;
+  height: 19px;
+  padding: 0 3px;
+  width: 61px;
+}
+
