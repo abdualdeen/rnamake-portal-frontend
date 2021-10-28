@@ -11,12 +11,6 @@ function Navigation() {
                     </Link>
                     <div>
                         <ul className="navbar-nav ml-auto">
-                            <li className={`nav-item  /home`}>
-                                <Link class="nav-link" to="/">
-                                    Home
-                                    <span className="sr-only">(current)</span>
-                                </Link>
-                            </li>
                             <li className={`nav-item  /about`}>
                                 <Link class="nav-link" to="/about">
                                     About
