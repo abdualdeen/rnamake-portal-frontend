@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Navigation, Home, About, Contact, Documentation } from './index.js';
-import helix from './Graphics/helix.svg';
+// import helix from './Graphics/helix.svg';
 import './App.css';
 
 function App() {
@@ -16,10 +16,10 @@ function App() {
                 <Route path="/documentation" exact component={() => <Documentation />} />
             </Switch>
         </Router>
-        <header className="App-header">
+        {/* <header className="App-header">
             <img src={helix} className="App-logo" alt="logo" />
           <p>RNAMake </p>
-      </header>
+        </header> */}
     </div>
   );
 }
