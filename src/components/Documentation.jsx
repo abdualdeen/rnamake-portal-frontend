@@ -5,20 +5,69 @@ function Documentation() {
         <div className="documentation">
             <div className="container">
                 <div className="row align-items-center my-5">
-                    <div className="col-lg-7">
-                        <img
-                            className="img-fluid rounded mb-4 mb-lg-0"
-                            src="http://placehold.it/900x400"
-                            alt=""
-                        />
-                    </div>
+                    
                     <div className="col-lg-5">
-                        <h1 className="font-weight-light">Documentation</h1>
+                        <a
+
+                        >
+                            Documentation
+                        </a>
+                        <h1 className="font-weight-light">Acknowledged Organizations</h1>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book.
+                            <a
+                                className="App-link"
+                                href="https://nsf.gov/awardsearch/showAward?AWD_ID=1148698"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Open Science Grid
+                            </a>
+                            <br></br>
+                            <a
+                                className="App-link"
+                                href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2030508"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Partnership to Advance Throughput Computing
+                            </a>
+                            <br></br>
+                            <a
+                                className="App-link"
+                                href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1053575"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Extreme Science and Engineering Discovery Environment
+                            </a>
+                            <br></br>
+                            <a
+                                className="App-link"
+                                href="https://www.nsf.gov/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                National Science Foundation
+                            </a>
+                            <br></br>
+                            <a
+                                className="App-link"
+                                href="https://hcc.unl.edu/hcc"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Holland Computing Center of University of Nebraska
+                            </a>
+                            <br></br>
+                            <a
+                                className="App-link"
+                                href="https://nebraska.edu/offices-policies/provosts-office/research/nebraska-research-initiative"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Nebraska Research Initiative
+                            </a>
+                            <br></br>
                         </p>
                     </div>
                 </div>
