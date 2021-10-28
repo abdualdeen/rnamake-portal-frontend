@@ -1,7 +1,23 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./globals.css"
-import "./styleguide.css"
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+
+);
+export { default as Navigation } from './components/Navigation';
+export { default as Home } from './components/Home';
+export { default as About } from './components/About';
+export { default as Contact } from './components/Contact';
+export { default as Documentation } from './components/Documentation';
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
