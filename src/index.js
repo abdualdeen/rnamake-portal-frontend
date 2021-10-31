@@ -16,6 +16,7 @@ export { default as Home } from './components/Home';
 export { default as About } from './components/About';
 export { default as Contact } from './components/Contact';
 export { default as Documentation } from './components/Documentation';
+export { default as Workspace } from './components/Workspace';
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
