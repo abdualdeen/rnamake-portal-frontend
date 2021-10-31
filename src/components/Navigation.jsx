@@ -26,12 +26,6 @@ function Navigation() {
                                     Documentation
                                 </Link>
                             </li>
-                            <li className={`nav-item  /`} >
-                                <Link class="nav-link" to="/">
-                                    Home
-                                    <span className="sr-only">(current)</span>
-                                </Link>
-                            </li>
                             <li className={`nav-item  /Workspace`} >
                                 <Link class="nav-link" to="/Workspace">
                                     Workspace
