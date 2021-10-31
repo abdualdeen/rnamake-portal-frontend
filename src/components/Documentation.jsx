@@ -7,9 +7,9 @@ function Documentation() {
                 <div className="row align-items-center my-5">
                     
                     <div className="col-lg-8">
-                        <a>
+                        {/* <a>
                             Documentation
-                        </a>
+                        </a> */}
                         <h1 className="font-weight-light">Acknowledgements</h1>
                         <p>
                             <a
