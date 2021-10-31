@@ -7,15 +7,9 @@ function Navigation() {
             <nav className="navbar navbar-expand navbar-dark bg-dark">
                 <div className="container">
                     <Link class="navbar-brand" to="/">
-                        {/* React Multi-Page Website */}
+                        RNAMake
                     </Link>
                     <div>
-                        <li className={`nav-item  /`} >
-                                <Link class="nav-link" to="/">
-                                    Home
-                                    <span className="sr-only">(current)</span>
-                                </Link>
-                            </li>
                         <ul className="navbar-nav ml-auto">
                             <li className={`nav-item  /about`}>
                                 <Link class="nav-link" to="/about">
