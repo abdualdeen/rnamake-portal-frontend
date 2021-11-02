@@ -4,7 +4,7 @@ import { Link, withRouter } from 'react-router-dom';
 function Navigation() {
     return (
         <div className="navigation">
-            <nav className="navbar navbar-expand navbar-dark bg-dark">
+            <nav className="navbar navbar-expand bg-transparent">
                 <div className="container">
                     <Link class="navbar-brand" to="/">
                         RNAMake
