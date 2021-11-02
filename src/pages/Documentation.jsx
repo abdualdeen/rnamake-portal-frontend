@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import corner_swoosh from '../graphics/corner_swoosh.svg';
 
 function Documentation() {
     return (
@@ -70,6 +71,7 @@ function Documentation() {
                     </div>
                 </div>
             </div>
+            <img src={corner_swoosh}/>
         </div>
     );
 }
