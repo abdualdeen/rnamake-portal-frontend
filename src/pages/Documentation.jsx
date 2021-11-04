@@ -1,9 +1,16 @@
 ﻿import React from 'react';
 import corner_swoosh from '../graphics/corner_swoosh.svg';
 
+const divStyle = {
+    width: '100%',
+    height: '100%',
+    backgroundImage: `url(${corner_swoosh})`,
+    backgroundSize: 'cover'
+};
+
 function Documentation() {
     return (
-        <div className="documentation">
+        <div className="documentation" style={divStyle}>
             <div className="container">
                 <div className="row align-items-center my-5">
                     
