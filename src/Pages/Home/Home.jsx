@@ -3,71 +3,39 @@ import React from 'react';
 import styled from "styled-components";
 import { ChivoLightKashmirBlue96px, ChivoNormalCharade24px, ChivoNormalCharade28px } from "../../styledMixins";
 import "./DesktopWebHome.css";
+import swoop from "./HomeSwoop.svg";
+import login from "./LogInButton.svg";
+import register from "./RegisterButton.svg";
 
 function Home() {
 
     return (
     <div className="container-center-horizontal">
       <div className="desktop-web-home screen">
-          <LogInButton src="./log-in-button-1@2x.svg" />
-          <RegisterButton src="./register-button-1@2x.svg" />
-          <Swoop src="./swoop@1x.svg" />
-          <div>
+          <div className="main-text" margin="auto">
             <Title>RNAMake</Title>
             <X3DDesignToolkit>3DDesignToolkit</X3DDesignToolkit>
+            <Text24>RNAMake is a toolkit for designing and optimizing RNA 3D structure. It allows the alignment between RNA motifs.
+               These motif are small modular pieces of RNA that are believed to fold independently, thus attaching them together 
+               with helix flanking both sides allows users of RNAMake to build large segments of RNA with a high success rate of 
+               forming the predicted structure in vitro.<br /> <br />Create an account or log in to access the application</Text24>
           </div>
+          <div>
+            <LogInButton src={login} />
+            <RegisterButton src={register} />
+          </div>
+          
       </div>
+      <Swoop src={swoop} />
     </div>
     );
 }
-
-const OverlapGroup1 = styled.div`
-  width: 1441px;
-  height: 1178px;
-  position: relative;
-  margin-left: -1px;
-  margin-top: -31.88px;
-`;
-
-const Navigation = styled.div`
-  ${ChivoNormalCharade24px}
-  position: absolute;
-  height: 88px;
-  top: 81px;
-  left: 77px;
-  display: flex;
-  align-items: flex-start;
-  min-width: 732px;
-`;
-
-const About = styled.div`
-  width: 115px;
-  min-height: 88px;
-  text-align: center;
-  letter-spacing: 0;
-`;
-
-const Place = styled.div`
-  width: 147px;
-  min-height: 88px;
-  margin-left: 132px;
-  text-align: center;
-  letter-spacing: 0;
-`;
-
-const Documentation = styled.div`
-  width: 238px;
-  min-height: 88px;
-  margin-left: 100px;
-  text-align: center;
-  letter-spacing: 0;
-`;
 
 const LogInButton = styled.img`
   position: absolute;
   width: 233px;
   height: 67px;
-  top: 595px;
+  top: 650px;
   left: 176px;
 `;
 
@@ -75,32 +43,26 @@ const RegisterButton = styled.img`
   position: absolute;
   width: 233px;
   height: 67px;
-  top: 595px;
+  top: 650px;
   left: 467px;
 `;
 
 const Swoop = styled.img`
   position: absolute;
-  width: 1441px;
+  width: 100%;
   height: 920px;
-  top: 258px;
+  top: 0px;
   left: 0;
-`;
-
-const OverlapGroup = styled.div`
-  position: absolute;
-  width: 574px;
-  height: 130px;
-  top: 199px;
-  left: 150px;
+  z-index: -1;
 `;
 
 const Title = styled.h1`
   ${ChivoLightKashmirBlue96px}
   position: absolute;
+  color: #4C5F94;
   width: 574px;
-  top: 0;
-  left: 0;
+  top: 120px;
+  left: 15%;
   text-align: center;
   letter-spacing: 0;
 `;
@@ -108,32 +70,27 @@ const Title = styled.h1`
 const X3DDesignToolkit = styled.div`
   ${ChivoNormalCharade28px}
   position: absolute;
+  font-weight: bold;
   width: 292px;
-  top: 97px;
-  left: 141px;
+  top: 225px;
+  left: 25%;
   text-align: center;
   letter-spacing: 0;
 `;
 
-const RNASVG = styled.img`
+const Text24 = styled.div`
+${ChivoNormalCharade24px}
   position: absolute;
-  width: 657px;
-  height: 862px;
-  top: 0;
-  left: 742px;
-`;
-
-const Text27 = styled.div`
-  position: absolute;
-  width: 573px;
-  top: 367px;
-  left: 151px;
+  width: 700px;
+  top: 320px;
+  left: 12.5%;
   font-family: var(--font-family-chivo);
   font-weight: 400;
   color: var(--black);
   font-size: var(--font-size-m);
-  text-align: center;
+  text-align: justify;
   letter-spacing: 0;
+  text-indent: 50px;
 `;
 
 export default Home;

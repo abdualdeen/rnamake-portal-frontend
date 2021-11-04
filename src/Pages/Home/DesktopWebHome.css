@@ -2,8 +2,13 @@
   align-items: flex-start;
   background-color: var(--wild-sand);
   display: flex;
-  height: 1200px;
+  height: 100%;
   overflow: hidden;
-  width: 1440px;
+  width: 100%;
 }
 
+.main-text {
+  width: 66%;
+  height: 100%;
+  align-items: center;
+}
