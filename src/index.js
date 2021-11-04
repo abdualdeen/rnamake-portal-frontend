@@ -12,7 +12,7 @@ ReactDOM.render(
 
 );
 export { default as Navigation } from './components/Navigation';
-export { default as Home } from './Pages/Home';
+export { default as Home } from './Pages/Home/Home';
 export { default as About } from './Pages/About';
 export { default as Contact } from './Pages/Contact';
 export { default as Documentation } from './Pages/Documentation';
