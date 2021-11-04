@@ -1,15 +1,23 @@
 ﻿import React from 'react';
+import corner_swoosh from '../graphics/corner_swoosh.svg';
+
+const divStyle = {
+    width: '100%',
+    height: '100%',
+    backgroundImage: `url(${corner_swoosh})`,
+    backgroundSize: 'cover'
+};
 
 function Documentation() {
     return (
-        <div className="documentation">
+        <div className="documentation" style={divStyle}>
             <div className="container">
                 <div className="row align-items-center my-5">
                     
                     <div className="col-lg-8">
-                        <a>
+                        {/* <a>
                             Documentation
-                        </a>
+                        </a> */}
                         <h1 className="font-weight-light">Acknowledgements</h1>
                         <p>
                             <a
@@ -70,6 +78,7 @@ function Documentation() {
                     </div>
                 </div>
             </div>
+            <img src={corner_swoosh}/>
         </div>
     );
 }
