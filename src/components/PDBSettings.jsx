@@ -4,33 +4,39 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
+import Button from '@mui/material/Button';
 
-export default function PaymentForm() {
+
+
+
+
+
+export default function PDBSettings() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Payment method
+        PDB file and Base Pairs
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
-          <TextField
-            required
-            id="cardName"
-            label="Name on card"
-            fullWidth
-            autoComplete="cc-name"
-            variant="standard"
-          />
+        <input
+          accept="*"
+          //className={className.input}
+          style={{ display: 'none' }}
+          id="raised-button-file"
+          multiple
+          type="file"
+        />
+<label htmlFor="raised-button-file">
+  <Button variant="raised" component="span" >
+    Upload
+  </Button>
+  </label> 
         </Grid>
         <Grid item xs={12} md={6}>
-          <TextField
-            required
-            id="cardNumber"
-            label="Card number"
-            fullWidth
-            autoComplete="cc-number"
-            variant="standard"
-          />
+        <Button onClick={() => {test();}}>
+        Click me
+  </Button>
         </Grid>
         <Grid item xs={12} md={6}>
           <TextField
@@ -62,4 +68,11 @@ export default function PaymentForm() {
       </Grid>
     </React.Fragment>
   );
+}
+
+
+
+function test()
+{
+  alert('Test');
 }

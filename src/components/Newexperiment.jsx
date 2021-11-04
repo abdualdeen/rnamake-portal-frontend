@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import JobName from './JobName';
+import PDBSettings from './PDBSettings';
 //import PaymentForm from './PaymentForm';
 //import Review from './Review.jsx';
 
@@ -21,14 +22,14 @@ function Copyright() {
   );
 }
 
-const steps = ['Name', 'Base PDB', 'Base Pairs', 'Designs', 'Review'];
+const steps = ['Name', 'PDB Settings', 'Base Pairs', 'Designs', 'Review'];
 
 function getStepContent(step) {
   switch (step) {
     case 0:
       return <JobName />;
-  //  case 1:
-  //    return <PaymentForm />;
+    case 1:
+      return <PDBSettings />;
   //  case 2:
   //    return <Review />;
   //  case 3:
