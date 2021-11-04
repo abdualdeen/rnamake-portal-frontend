@@ -78,7 +78,7 @@ function Documentation() {
                     </div>
                 </div>
             </div>
-            <img src={corner_swoosh}/>
+            
         </div>
     );
 }
