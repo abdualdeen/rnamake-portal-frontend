@@ -1,10 +1,11 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
+//import List from '@mui/material/List';
+//import ListItem from '@mui/material/ListItem';
+//import ListItemText from '@mui/material/ListItemText';
 import Grid from '@mui/material/Grid';
 
+// eslint-disable-next-line no-unused-vars
 const products = [
   {
     name: 'Product 1',
@@ -29,55 +30,50 @@ const products = [
   { name: 'Shipping', desc: '', price: 'Free' },
 ];
 
-const addresses = ['1 MUI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
-const payments = [
-  { name: 'Card type', detail: 'Visa' },
-  { name: 'Card holder', detail: 'Mr John Smith' },
-  { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
-  { name: 'Expiry date', detail: '04/2024' },
+const col1 = [
+  { name: 'Experiment Name', detail: 'Example Name' },
+  { name: 'Description', detail: 'Testkejwlsdjflskjdfl' },
+  { name: 'PDB File', detail: 'examplepdb.pdb' },
+  { name: 'Start Base Pair', detail: 'A141-A162' },
+  { name: 'End Base Pair', detail: 'A225-A261' },
 ];
 
+const col2 = [
+  { name: 'Number of Designs', detail: '10' },
+  { name: 'Number of Sequences', detail: '3' },
+  { name: 'Time Limit', detail: '60 minutes' },
+  { name: 'Other Arguments', detail: '--search_type mc --motif_path...' },
+]
 export default function Review() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Order summary
+        Review
       </Typography>
-      <List disablePadding>
-        {products.map((product) => (
-          <ListItem key={product.name} sx={{ py: 1, px: 0 }}>
-            <ListItemText primary={product.name} secondary={product.desc} />
-            <Typography variant="body2">{product.price}</Typography>
-          </ListItem>
-        ))}
-
-        <ListItem sx={{ py: 1, px: 0 }}>
-          <ListItemText primary="Total" />
-          <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
-            $34.06
-          </Typography>
-        </ListItem>
-      </List>
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={6}>
-          <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
-            Shipping
-          </Typography>
-          <Typography gutterBottom>John Smith</Typography>
-          <Typography gutterBottom>{addresses.join(', ')}</Typography>
-        </Grid>
         <Grid item container direction="column" xs={12} sm={6}>
-          <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
-            Payment details
-          </Typography>
-          <Grid container>
-            {payments.map((payment) => (
-              <React.Fragment key={payment.name}>
+        <Grid container>
+            {col1.map((col1) => (
+              <React.Fragment key={col1.name}>
                 <Grid item xs={6}>
-                  <Typography gutterBottom>{payment.name}</Typography>
+                  <Typography gutterBottom align="left">{col1.name}</Typography>
                 </Grid>
                 <Grid item xs={6}>
-                  <Typography gutterBottom>{payment.detail}</Typography>
+                  <Typography gutterBottom align="left">{col1.detail}</Typography>
+                </Grid>
+              </React.Fragment>
+            ))}
+          </Grid>
+        </Grid>
+        <Grid item container direction="column" xs={12} sm={6}>
+          <Grid container>
+            {col2.map((col2) => (
+              <React.Fragment key={col2.name}>
+                <Grid item xs={6}>
+                  <Typography gutterBottom align="left">{col2.name}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography gutterBottom align="left">{col2.detail}</Typography>
                 </Grid>
               </React.Fragment>
             ))}

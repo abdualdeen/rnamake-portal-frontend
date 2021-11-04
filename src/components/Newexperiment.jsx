@@ -13,7 +13,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import JobName from './JobName';
 import PDBSettings from './PDBSettings';
 //import PaymentForm from './PaymentForm';
-//import Review from './Review.jsx';
+import Review from './Review.jsx';
 
 function Copyright() {
   return (
@@ -22,7 +22,7 @@ function Copyright() {
   );
 }
 
-const steps = ['Name', 'PDB Settings', 'Base Pairs', 'Designs', 'Review'];
+const steps = ['Name', 'PDB Settings', 'Review'];
 
 function getStepContent(step) {
   switch (step) {
@@ -30,8 +30,8 @@ function getStepContent(step) {
       return <JobName />;
     case 1:
       return <PDBSettings />;
-  //  case 2:
-  //    return <Review />;
+    case 2:
+      return <Review />;
   //  case 3:
   //    return <Designs />;
   //  case 4:
@@ -85,12 +85,10 @@ export default function Checkout() {
             {activeStep === steps.length ? (
               <React.Fragment>
                 <Typography variant="h5" gutterBottom>
-                  Thank you for your order.
+                  Job Submitted.
                 </Typography>
                 <Typography variant="subtitle1">
-                  Your order number is #2001539. We have emailed your order
-                  confirmation, and will send you an update when your order has
-                  shipped.
+                  <a href="/">Return to portal</a>
                 </Typography>
               </React.Fragment>
             ) : (
@@ -108,7 +106,7 @@ export default function Checkout() {
                     onClick={handleNext}
                     sx={{ mt: 3, ml: 1 }}
                   >
-                    {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
+                    {activeStep === steps.length - 1 ? 'Submit Job' : 'Next'}
                   </Button>
                 </Box>
               </React.Fragment>
