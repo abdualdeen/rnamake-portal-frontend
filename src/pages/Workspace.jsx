@@ -7,7 +7,7 @@ import scaffold_rna_button from '../graphics/scaffold_button.svg';
 function Workspace() {
     return (
        <div>
-           <header className='rna-title'>RNAMake</header>
+           <text className='rna-title'>RNAMake</text>
            <h2 className='rna-subtitle'>3D Design Toolkit</h2>
 
            <section>
