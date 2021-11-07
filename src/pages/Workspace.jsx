@@ -7,19 +7,23 @@ import scaffold_rna_button from '../graphics/scaffold_button.svg';
 function Workspace() {
     return (
        <div>
-           <header className='rna-title'>RNAMake</header>
-           <h2 className='rna-subtitle'>3D Design Toolkit</h2>
+           <div className='home-left'>
+               <div className='home-group'>
+                   <text className='rna-title'>RNAMake</text>
+                   <h2 className='rna-subtitle'>3D Design Toolkit</h2>
+                   <div className='scaffold-button'>
+                        <img src={scaffold_rna_button} alt=''></img>
+                   </div>
+                </div>
 
-           <section>
-               <aside>
-                   <img src={small_RNA_SVG} float='right'></img>
-               </aside>
-               <img src={scaffold_rna_button} float='right'></img>
-           </section>
+                <div className='rna-svg'>
+                    <img src={small_RNA_SVG} alt=''></img>
+                </div>
+            </div>
 
-           <section color='#E4E9F1' float='right'>
-               <text>Recent Experiments</text>
-           </section>
+           <div className='recent-exp'>
+                <p className='exp-font'>Recent Experiments</p>
+           </div>
        </div>
     );
 }

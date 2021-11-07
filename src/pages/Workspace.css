@@ -2,9 +2,43 @@
     font-size: 96px;
     text-align: center;
     color: #6B7EB3;
+    font-weight: lighter;
 }
 
 .rna-subtitle {
     font-size: 28px;
     text-align: center;
+}
+
+.home-left {
+    width: 66.67%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recent-exp {
+    background-color: #E4E9F1;
+    width: 33.33%;
+    float: right;
+    min-height: 400px;
+}
+
+.home-group {
+    width: 50%;
+}
+
+.rna-svg {
+    float: right;
+    width: 15%;
+}
+
+.exp-font {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.scaffold-button {
+    margin-top: 30%;
 }
