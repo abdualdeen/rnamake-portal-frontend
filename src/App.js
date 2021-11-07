@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Navigation, Home, About, Contact, Documentation, Workspace, PastExperiments } from './index.js';
-import corner_swoosh from './graphics/corner_swoosh.svg';
 // import helix from './Graphics/helix.svg';
 import './App.css';
 
+
 function App() {
   return (
-      <div className="App" styles = {{ backgroundImage:corner_swoosh}}>
+      <div className="App">
           <Router>
               <Navigation />
               <Switch>

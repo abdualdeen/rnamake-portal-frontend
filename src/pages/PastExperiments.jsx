@@ -7,7 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import Paper from '@mui/material/Paper';
-import './PastExperiments.css';
+import corner_swoosh from '../graphics/corner_swoosh.svg'
 
 function createData(name, application, user, creationTime, status, actions) {
   return {name, application, user, creationTime, status, actions};
@@ -67,6 +67,7 @@ function PastExperiments() {
                 </div>
             </div>
             <br></br>
+            <img src={corner_swoosh} alt="" width='100%'/>
         </div>
     );
 }
