@@ -139,7 +139,7 @@ function MyDropline() {
 
 const FlexRow = styled.div`
 margin-top: 83px;
-margin-left: 58px;
+margin-left: 135px;
 display: flex;
 align-items: flex-start;
 min-width: 996px;
