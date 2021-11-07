@@ -1,78 +1,50 @@
-import * as React from 'react';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Button from '@mui/material/Button';
+import React, {useCallback} from 'react';
+import {useDropzone} from 'react-dropzone';
+import dragNDropBox from '../Graphics/dragNDropBox.png';
+import styled from 'styled-components';
 
-
-
-
-
-
-export default function PDBSettings() {
+function PDBSettings() {
   return (
     <React.Fragment>
-      <Typography variant="h6" gutterBottom>
-        PDB file and Base Pairs
-      </Typography>
-      <Grid container spacing={3}>
-        <Grid item xs={12} md={6}>
-        <input
-          accept="*"
-          //className={className.input}
-          style={{ display: 'none' }}
-          id="raised-button-file"
-          multiple
-          type="file"
-        />
-<label htmlFor="raised-button-file">
-  <Button variant="raised" component="span" >
-    Upload
-  </Button>
-  </label> 
-        </Grid>
-        <Grid item xs={12} md={6}>
-        <Button onClick={() => {test();}}>
-        Click me
-  </Button>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <TextField
-            required
-            id="expDate"
-            label="Expiry date"
-            fullWidth
-            autoComplete="cc-exp"
-            variant="standard"
-          />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <TextField
-            required
-            id="cvv"
-            label="CVV"
-            helperText="Last three digits on signature strip"
-            fullWidth
-            autoComplete="cc-csc"
-            variant="standard"
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <FormControlLabel
-            control={<Checkbox color="secondary" name="saveCard" value="yes" />}
-            label="Remember credit card details for next time"
-          />
-        </Grid>
-      </Grid>
-    </React.Fragment>
-  );
+      <div className='PDBSettings'>
+        <FlexRow>
+          <span>
+            Submission requires a PDB containing RNA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <br></br>
+            that has at least 2 basepair ends &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </span>
+            <MyDropline></MyDropline>
+        </FlexRow>
+      </div>
+    </React.Fragment>)
 }
 
+export default PDBSettings;
 
+function MyDropline() {
+  const onDrop = useCallback(acceptedFiles => {
+    // Do something with the files
+    return acceptedFiles;
+  }, [])
+  const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop})
 
-function test()
-{
-  alert('Test');
+  return (
+    <div {...getRootProps()}>
+      <img src = {dragNDropBox}/>
+      <input {...getInputProps()} />
+      {
+        isDragActive ?
+          <p></p> :
+          <p></p>
+      }
+    </div>
+  )
 }
+
+const FlexRow = styled.div`
+margin-top: 83px;
+margin-left: 58px;
+display: flex;
+align-items: flex-start;
+min-width: 996px;
+`;
