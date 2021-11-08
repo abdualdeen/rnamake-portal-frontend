@@ -14,7 +14,7 @@ ReactDOM.render(
 export { default as Navigation } from './components/Navigation';
 export { default as Home } from './pages/Home';
 export { default as About } from './pages/About';
-export { default as Contact } from './pages/Contact';
+export { default as Contact } from './pages/Contact/Contact';
 export { default as Documentation } from './pages/Documentation';
 export { default as Workspace } from './pages/Workspace';
 export { default as PastExperiments } from './pages/PastExperiments';
