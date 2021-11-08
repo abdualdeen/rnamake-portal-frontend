@@ -75,7 +75,7 @@ function About() {
             <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1053575" target="_blank" rel="noreferrer">
               <Xsede src={xsede} />
             </a>
-            <a href="unl.edu" target="_blank" rel="noreferrer">
+            <a href="https://www.unl.edu" target="_blank" rel="noreferrer">
               <UNL src={unl} />
             </a>
             <Text29></Text29>
