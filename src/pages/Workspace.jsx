@@ -1,7 +1,7 @@
 import React from 'react';
 import './Workspace.css';
 import small_RNA_SVG from '../graphics/small_RNA_SVG.svg';
-import scaffold_rna_button from '../graphics/scaffold_button.svg';
+import {Button} from '../components/Button';
 
 
 function Workspace() {
@@ -12,7 +12,16 @@ function Workspace() {
                    <text className='rna-title'>RNAMake</text>
                    <h2 className='rna-subtitle'>3D Design Toolkit</h2>
                    <div className='scaffold-button'>
-                        <img src={scaffold_rna_button} alt=''></img>
+                   <Button
+                        onClick={() => {
+                            console.log('clicked!');
+                        }}
+                        type="button"
+                        buttonStyle="btn--primary--solid"
+                        buttonSize="btn--xlarge"
+                    >
+                        Design New RNA Scaffold
+                    </Button>
                    </div>
                 </div>
 

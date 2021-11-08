@@ -1,11 +1,12 @@
 .rna-title {
+    font-family: 'Chivo';
     font-size: 96px;
     text-align: center;
     color: #6B7EB3;
-    font-weight: lighter;
 }
 
 .rna-subtitle {
+    font-family: 'Chivo';
     font-size: 28px;
     text-align: center;
 }
@@ -35,10 +36,10 @@
 }
 
 .exp-font {
+    font-family: 'Chivo';
     font-size: 24px;
-    font-weight: lighter;
 }
 
 .scaffold-button {
-    margin-top: 30%;
+    margin-top: 50%;
 }

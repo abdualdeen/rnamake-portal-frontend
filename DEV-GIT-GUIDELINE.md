@@ -22,9 +22,9 @@
 
 ## Others:
 
-### I need to update my branch from develop, it is behind:
+### "I need to update my branch from develop, it is behind" and creating a PR:
 
-1. commit changes to your branch first and push.
+1. Commit changes to your branch first and push.
 
 2. `git switch dev`
 
@@ -34,13 +34,20 @@
 
 5. `git merge dev`
 
+6. Fix any merge conflicts present.
+
+7. Commit changes to that branch and push.
+
+8. Create PR on github. Make sure that the branch merging is pointed at dev and not main.
 
 ### Merging a branch back into develop (Only DM):
 
-1. commit changes to your branch first and push.
+1. Commit changes to your branch first and push.
 
 2. Switch to the branch you want to merge.
 
 3. `git checkout dev`
 
 4. `git merge branch-I-want-to-merge-to-dev`
+
+5. Commit and push changes.
