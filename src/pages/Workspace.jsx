@@ -1,25 +1,38 @@
 import React from 'react';
 import './Workspace.css';
 import small_RNA_SVG from '../graphics/small_RNA_SVG.svg';
-import scaffold_rna_button from '../graphics/scaffold_button.svg';
+import {Button} from '../components/Button';
 
 
 function Workspace() {
     return (
        <div>
-           <text className='rna-title'>RNAMake</text>
-           <h2 className='rna-subtitle'>3D Design Toolkit</h2>
+           <div className='home-left'>
+               <div className='home-group'>
+                   <text className='rna-title'>RNAMake</text>
+                   <h2 className='rna-subtitle'>3D Design Toolkit</h2>
+                   <div className='scaffold-button'>
+                   <Button
+                        onClick={() => {
+                            console.log('clicked!');
+                        }}
+                        type="button"
+                        buttonStyle="btn--primary--solid"
+                        buttonSize="btn--xlarge"
+                    >
+                        Design New RNA Scaffold
+                    </Button>
+                   </div>
+                </div>
 
-           <section>
-               <aside>
-                   <img src={small_RNA_SVG} float='right'></img>
-               </aside>
-               <img src={scaffold_rna_button} float='right'></img>
-           </section>
+                <div className='rna-svg'>
+                    <img src={small_RNA_SVG} alt=''></img>
+                </div>
+            </div>
 
-           <section color='#E4E9F1' float='right'>
-               <text>Recent Experiments</text>
-           </section>
+           <div className='recent-exp'>
+                <p className='exp-font'>Recent Experiments</p>
+           </div>
        </div>
     );
 }

@@ -2,7 +2,7 @@
 
 1. `git pull` to pull the latest changes before adding your changes.
 
-2. `git checkout -b feature/issue-#-quick-description` checkout your changes to a new branch. 
+2. `git checkout -b issue#-quick-description` checkout your changes to a new branch. 
 
 3. `git add .` to add all the files you made changes to or files you've added/removed. 
 
@@ -14,17 +14,17 @@
         Fixed issue where the react page would not load when clicking on it's corresponding button as it was not linked to the page. 
         
     Or:
-        - Added a new section in the job submission page for more granular control about the RNA moleclue.
+        - Added a new section in the job submission page for more granular control about the RNA molecule.
         - Added a new button in the job submission page for the user to submit. No functionality yet for the button.
 
-5. `git push` The terminal will spit out a command for you. Copy and paste that command to finsih pushing the branch.
+5. `git push` The terminal will spit out a command for you. Copy and paste that command to finish pushing the branch.
 
 
 ## Others:
 
-### I need to update my branch from develop, it is behind:
+### "I need to update my branch from develop, it is behind" and creating a PR:
 
-1. commit changes to your branch first and push.
+1. Commit changes to your branch first and push.
 
 2. `git switch dev`
 
@@ -34,13 +34,20 @@
 
 5. `git merge dev`
 
+6. Fix any merge conflicts present.
 
-### Merging a branch back into develop:
+7. Commit changes to that branch and push.
 
-1. commit changes to your branch first and push.
+8. Create PR on github. Make sure that the branch merging is pointed at dev and not main.
+
+### Merging a branch back into develop (Only DM):
+
+1. Commit changes to your branch first and push.
 
 2. Switch to the branch you want to merge.
 
 3. `git checkout dev`
 
 4. `git merge branch-I-want-to-merge-to-dev`
+
+5. Commit and push changes.
