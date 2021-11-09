@@ -1,11 +1,11 @@
 ﻿/* eslint-disable no-unused-vars */
 import React from 'react';
 import styled from "styled-components";
-import { ChivoLightKashmirBlue96px, ChivoNormalCharade24px, ChivoNormalCharade28px } from "../../styledMixins";
+// import { ChivoLightKashmirBlue96px, ChivoNormalCharade24px, ChivoNormalCharade28px } from "../../styledMixins";
 import "./DesktopWebHome.css";
-import swoop from "./HomeSwoop.svg";
-import login from "./LogInButton.svg";
-import register from "./RegisterButton.svg";
+import swoop from "../Graphics/HomeSwoop.svg";
+import login from "../Graphics/LogInButton.svg";
+import register from "../Graphics/RegisterButton.svg";
 
 function Home() {
 
@@ -14,7 +14,7 @@ function Home() {
       <div className="desktop-web-home screen">
           <div className="main-text" margin="auto">
             <Title>RNAMake</Title>
-            <X3DDesignToolkit>3DDesignToolkit</X3DDesignToolkit>
+            <X3DDesignToolkit>3D Design Toolkit</X3DDesignToolkit>
             <Text24>RNAMake is a toolkit for designing and optimizing RNA 3D structure. It allows the alignment between RNA motifs.
                These motif are small modular pieces of RNA that are believed to fold independently, thus attaching them together 
                with helix flanking both sides allows users of RNAMake to build large segments of RNA with a high success rate of 
@@ -57,7 +57,7 @@ const Swoop = styled.img`
 `;
 
 const Title = styled.h1`
-  ${ChivoLightKashmirBlue96px}
+  font-family: 'Chivo';
   position: absolute;
   color: #4C5F94;
   width: 574px;
@@ -68,7 +68,7 @@ const Title = styled.h1`
 `;
 
 const X3DDesignToolkit = styled.div`
-  ${ChivoNormalCharade28px}
+  font-family: 'Chivo';
   position: absolute;
   font-weight: bold;
   width: 292px;
@@ -79,7 +79,7 @@ const X3DDesignToolkit = styled.div`
 `;
 
 const Text24 = styled.div`
-${ChivoNormalCharade24px}
+  font-family: 'Chivo';
   position: absolute;
   width: 700px;
   top: 320px;
