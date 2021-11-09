@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Navigation, Home, About, Contact, Documentation, Workspace, PastExperiments, NewExperiment, FileUpload } from './index.js';
+import { Navigation, Home, About, Contact, Documentation, Workspace, PastExperiments, NewExperiment, FileUpload, Groups } from './index.js';
 // import helix from './Graphics/helix.svg';
 import './App.css';
 
@@ -19,6 +19,7 @@ function App() {
                   <Route path="/past-experiments" exact component={() => <PastExperiments />} />
                   <Route path="/file-upload" exact component={() => <FileUpload />} />
                   <Route path="/new-experiment" exact component={() => <NewExperiment />} />
+                  <Route path="/groups" exact component={() => <Groups />} />
               </Switch>
           </Router>
           {/* <header className="App-header">
