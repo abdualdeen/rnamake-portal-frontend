@@ -32,8 +32,8 @@ function Navigation() {
                                     <span className="sr-only">(current)</span>
                                 </Link>
                             </li>
-                            <li className={`nav-item  /pastexperiments`} >
-                                <Link class="nav-link" to="/pastexperiments">
+                            <li className={`nav-item  /past-experiments`} >
+                                <Link class="nav-link" to="/past-experiments">
                                     Past Experiments
                                     <span className="sr-only">(current)</span>
                                 </Link>
@@ -41,6 +41,12 @@ function Navigation() {
                             <li className={`nav-item  /groups`} >
                                 <Link class="nav-link" to="/groups">
                                     Groups
+                                    <span className="sr-only">(current)</span>
+                                </Link>
+                            </li>
+                            <li className={`nav-item  /file-upload`} >
+                                <Link class="nav-link" to="/file-upload">
+                                    File Upload
                                     <span className="sr-only">(current)</span>
                                 </Link>
                             </li>
