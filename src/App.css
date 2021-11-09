@@ -1,3 +1,7 @@
+/* import chivo font to be used. */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+
 .App {
   text-align: center;
   background-image: url(./graphics/corner_swoosh.png);
