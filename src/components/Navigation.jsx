@@ -4,10 +4,10 @@ import { Link, withRouter } from 'react-router-dom';
 function Navigation() {
     return (
         <div className="navigation">
-            <nav className="navbar navbar-expand navbar-dark bg-dark">
+            <nav className="navbar navbar-expand bg-transparent">
                 <div className="container">
                     <Link class="navbar-brand" to="/">
-                        {/* React Multi-Page Website */}
+                        RNAMake
                     </Link>
                     <div>
                         <ul className="navbar-nav ml-auto">
@@ -26,9 +26,15 @@ function Navigation() {
                                     Documentation
                                 </Link>
                             </li>
-                            <li className={`nav-item  /`} >
-                                <Link class="nav-link" to="/">
-                                    Home
+                            <li className={`nav-item  /workspace`} >
+                                <Link class="nav-link" to="/workspace">
+                                    Workspace
+                                    <span className="sr-only">(current)</span>
+                                </Link>
+                            </li>
+                            <li className={`nav-item  /pastexperiments`} >
+                                <Link class="nav-link" to="/pastexperiments">
+                                    Past Experiments
                                     <span className="sr-only">(current)</span>
                                 </Link>
                             </li>

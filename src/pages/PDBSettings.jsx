@@ -4,7 +4,7 @@ import React, { useState, /*useCallback*/ } from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-import FileExplorer from './FileExplorer'
+import FileExplorer from '../components/FileExplorer'
 //import {useDropzone} from 'react-dropzone';
 //import dragNDropBox from '../Graphics/dragNDropBox.png';
 //import styled from 'styled-components';

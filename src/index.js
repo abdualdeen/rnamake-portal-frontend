@@ -12,10 +12,13 @@ ReactDOM.render(
 
 );
 export { default as Navigation } from './components/Navigation';
-export { default as Home } from './components/Home';
-export { default as About } from './components/About';
-export { default as Contact } from './components/Contact';
-export { default as Documentation } from './components/Documentation';
+export { default as Home } from './pages/Home';
+export { default as About } from './pages/About';
+export { default as Contact } from './pages/Contact';
+export { default as Documentation } from './pages/Documentation';
+export { default as Workspace } from './pages/Workspace';
+export { default as PastExperiments } from './pages/PastExperiments';
+export { default as NewExperiment } from './pages/NewExperiment';
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -1,4 +1,6 @@
 ﻿import React from 'react';
+import corner_swoosh from '../graphics/corner_swoosh.svg';
+
 
 function Documentation() {
     return (
@@ -7,11 +9,9 @@ function Documentation() {
                 <div className="row align-items-center my-5">
                     
                     <div className="col-lg-8">
-                        <a
-
-                        >
+                        {/* <a>
                             Documentation
-                        </a>
+                        </a> */}
                         <h1 className="font-weight-light">Acknowledgements</h1>
                         <p>
                             <a
@@ -72,6 +72,7 @@ function Documentation() {
                     </div>
                 </div>
             </div>
+            <img src={corner_swoosh} alt="" width='100%'/>
         </div>
     );
 }
