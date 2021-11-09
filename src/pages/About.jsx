@@ -16,7 +16,7 @@ function About() {
         <FlexRow>
           <FlexCol>
             <TopTab>
-              <AboutTheToolkit></AboutTheToolkit>
+              <AboutTheToolkit>About</AboutTheToolkit>
               <Helix src={helix} align-items="center" />
             </TopTab>
             <Text28>
@@ -112,9 +112,11 @@ const TopTab = styled.div`
 
 const AboutTheToolkit = styled.div`
   font-family: 'Chivo';
+  font-size: 48px;
+  color: #4C5F94;
   position: absolute;
   top: 54px;
-  left: 109px;
+  left: 270px;
   text-align: center;
   letter-spacing: 0;
 `;

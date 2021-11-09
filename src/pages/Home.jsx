@@ -56,6 +56,7 @@ const Swoop = styled.img`
 
 const Title = styled.h1`
   font-family: 'Chivo';
+  font-size: 64px;
   position: absolute;
   color: #4C5F94;
   width: 574px;
@@ -67,6 +68,7 @@ const Title = styled.h1`
 
 const X3DDesignToolkit = styled.div`
     font-family: 'Chivo';
+    font-size: 24px;
     position: absolute;
     font-weight: bold;
     width: 292px;

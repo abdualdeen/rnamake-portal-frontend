@@ -74,6 +74,7 @@ const OverlapGroup4 = styled.div`
 
 const Contacts = styled.div`
   font-family: 'Chivo';
+  font-size: 48px;
   position: absolute;
   top: 45px;
   left: 108px;
