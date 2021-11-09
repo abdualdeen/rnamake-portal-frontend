@@ -38,6 +38,12 @@ function Navigation() {
                                     <span className="sr-only">(current)</span>
                                 </Link>
                             </li>
+                            <li className={`nav-item  /groups`} >
+                                <Link class="nav-link" to="/groups">
+                                    Groups
+                                    <span className="sr-only">(current)</span>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
