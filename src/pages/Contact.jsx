@@ -1,17 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  ChivoLightBlack18px,
-  ChivoNormalCharade18px,
-  ChivoBoldCharade24px,
-  ChivoLightKashmirBlue64px,
-} from "../../styledMixins";
-import "./DesktopContact.css";
-import helix from "./helix.svg";
-import hongfeng from "./hongfeng.png";
-import weitzel from "./weitzel.png";
-import yesselman from "./yesselman.png";
-import swoop from "./swoop.svg";
+import "./Contact.css";
+import helix from "../graphics/helix.svg";
+import hongfeng from "../images/hongfeng.png";
+import weitzel from "../images/weitzel.png";
+import yesselman from "../images/yesselman.png";
+import corner_swoosh from "../graphics/corner_swoosh.svg";
 
 function Contact() {
 
@@ -64,7 +58,7 @@ function Contact() {
             </Group13>
           </OverlapGroup3>
         </OverlapGroup5>
-        <Vector1 src={swoop} />
+        <Vector1 src={corner_swoosh} />
       </div>
     </div>
   );
@@ -79,7 +73,7 @@ const OverlapGroup4 = styled.div`
 `;
 
 const Contacts = styled.div`
-  ${ChivoLightKashmirBlue64px}
+  font-family: 'Chivo';
   position: absolute;
   top: 45px;
   left: 108px;
@@ -97,7 +91,7 @@ const Group12 = styled.img`
 `;
 
 const Text3 = styled.div`
-  ${ChivoNormalCharade18px}
+  font-family: 'Chivo';
   width: 732px;
   min-height: 121px;
   margin-top: 14px;
@@ -158,7 +152,7 @@ const OverlapGroup = styled.div`
 `;
 
 const Name = styled.div`
-  ${ChivoBoldCharade24px}
+  font-family: 'Chivo';
   position: absolute;
   width: 289px;
   top: 0;
@@ -168,7 +162,7 @@ const Name = styled.div`
 `;
 
 const Text4 = styled.div`
-  ${ChivoLightBlack18px}
+  font-family: 'Chivo';
   position: absolute;
   width: 240px;
   top: 30px;
@@ -178,7 +172,7 @@ const Text4 = styled.div`
 `;
 
 const Dweitzelunledu = styled.div`
-  ${ChivoNormalCharade18px}
+  font-family: 'Chivo';
   width: 289px;
   min-height: 47px;
   margin-top: 20px;
@@ -227,7 +221,7 @@ const OverlapGroup2 = styled.div`
 
 
 const Text6 = styled.div`
-  ${ChivoNormalCharade18px}
+  font-family: 'Chivo';
   width: 289px;
   min-height: 47px;
   margin-top: 41px;
