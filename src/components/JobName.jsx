@@ -3,8 +3,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import BasicMenu from './BasicMenu';
-
-
+import InputSlider from './InputSlider';
 
 export default function JobName() {
   return (
@@ -32,6 +31,21 @@ export default function JobName() {
             maxRows = "5"
             variant="standard"
           />
+        </Grid>
+        <Grid item xs={12}>
+          {/*spacer*/}
+        </Grid>
+        <Grid item xs={12} sm={6}>
+        <Typography id="input-slider-1" gutterBottom>
+        Number of Designs
+      </Typography>
+          <InputSlider />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+        <Typography id="input-slider-2" gutterBottom>
+        Number of Scaffolds per Design
+      </Typography>
+          <InputSlider />
         </Grid>
         <Grid item xs={12 }>
         <BasicMenu />
