@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { ChivoLightKashmirBlue64px, ChivoBoldKashmirBlue36px } from "../../styledMixins";
-import "./DesktopAbout.css";
-import helix from "./helix.svg";
-import unl from "./unl-logo.png";
-import nsf from "./nsf.png";
-import osg from "./osg.png";
-import path from "./paTh.png";
-import xsede from "./xsede.png";
+import "./About.css";
+import helix from "../graphics/helix.svg";
+import unl from "../images/unl-logo.png";
+import nsf from "../images/nsf.png";
+import osg from "../images/osg.png";
+import path from "../images/paTh.png";
+import xsede from "../images/xsede.png";
 
 function About() {
 
@@ -112,7 +111,7 @@ const TopTab = styled.div`
 `;
 
 const AboutTheToolkit = styled.div`
-  ${ChivoLightKashmirBlue64px}
+  font-family: 'Chivo';
   position: absolute;
   top: 54px;
   left: 109px;
@@ -132,7 +131,7 @@ const Text28 = styled.div`
   width: 732px;
   min-height: 811px;
   margin-top: 23px;
-  font-family: var(--font-family-chivo);
+  font-family: 'Chivo';
   font-weight: 400;
   color: var(--charade);
   font-size: var(--font-size-m);
@@ -151,7 +150,7 @@ const LinkGroup = styled.div`
 `;
 
 const Acknowledgements = styled.div`
-  ${ChivoBoldKashmirBlue36px}
+  font-family: 'Chivo';
   width: 392px;
   min-height: 43px;
   align-self: flex-end;
@@ -200,7 +199,7 @@ const Text29 = styled.p`
   min-height: 75px;
   align-self: flex-end;
   margin-top: 62px;
-  font-family: var(--font-family-chivo);
+  font-family: 'Chivo';
   font-weight: 700;
   color: var(--charade);
   font-size: var(--font-size-xs);
