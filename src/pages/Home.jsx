@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import styled from "styled-components";
-import "./DesktopWebHome.css";
+import "./Home.css";
 import swoop from "../graphics/HomeSwoop.svg";
 import login from "../graphics/LogInButton.svg";
 import register from "../graphics/RegisterButton.svg";
