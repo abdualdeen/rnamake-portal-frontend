@@ -1,10 +1,13 @@
 import React from 'react';
 import './Workspace.css';
 import small_RNA_SVG from '../graphics/small_RNA_SVG.svg';
-import {Button} from '../components/Button';
+import { Button } from '../components/Button';
+import { useHistory } from 'react-router-dom';
 
 
 function Workspace() {
+    let history = useHistory(); // used for rerouting to another page.
+
     return (
        <div>
            <div className='home-left'>
@@ -14,7 +17,7 @@ function Workspace() {
                    <div className='scaffold-button'>
                    <Button
                         onClick={() => {
-                            console.log('clicked!');
+                            history.push('/newexperiment');
                         }}
                         type="button"
                         buttonStyle="btn--primary--solid"
