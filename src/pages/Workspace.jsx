@@ -17,7 +17,7 @@ function Workspace() {
                    <div className='scaffold-button'>
                    <Button
                         onClick={() => {
-                            history.push('/newexperiment');
+                            history.push('/new-experiment');
                         }}
                         type="button"
                         buttonStyle="btn--primary--solid"

@@ -18,7 +18,7 @@ function App() {
                   <Route path="/workspace" exact component={() => <Workspace />} />
                   <Route path="/past-experiments" exact component={() => <PastExperiments />} />
                   <Route path="/file-upload" exact component={() => <FileUpload />} />
-                  <Route path="/newexperiment" exact component={() => <NewExperiment />} />
+                  <Route path="/new-experiment" exact component={() => <NewExperiment />} />
               </Switch>
           </Router>
           {/* <header className="App-header">
