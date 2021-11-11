@@ -1,36 +1,53 @@
 ﻿import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-function Navigation(props) {
+function Navigation() {
     return (
         <div className="navigation">
-            <nav class="navbar navbar-expand navbar-dark bg-dark">
-                <div class="container">
+            <nav className="navbar navbar-expand bg-transparent">
+                <div className="container">
                     <Link class="navbar-brand" to="/">
-                        {/* React Multi-Page Website */}
+                        RNAMake
                     </Link>
-
                     <div>
-                        <ul class="navbar-nav ml-auto">
-                            <li class={`nav-item  ${props.location.pathname === '/about' ? 'active' : ''}`}>
+                        <ul className="navbar-nav ml-auto">
+                            <li className={`nav-item  /about`}>
                                 <Link class="nav-link" to="/about">
                                     About
                                 </Link>
                             </li>
-                            <li class={`nav-item  ${props.location.pathname === '/contact' ? 'active' : ''}`}>
+                            <li className={`nav-item  /contact`}>
                                 <Link class="nav-link" to="/contact">
                                     Contact
                                 </Link>
                             </li>
-                            <li class={`nav-item  ${props.location.pathname === '/Documentation' ? 'active' : ''}`}>
-                                <Link class="nav-link" to="/Documentation">
+                            <li className={`nav-item  /documentation`}>
+                                <Link class="nav-link" to="/documentation">
                                     Documentation
                                 </Link>
                             </li>
-                            <li class={`nav-item  ${props.location.pathname === '/' ? 'active' : ''}`} >
-                                <Link class="nav-link" to="/">
-                                    Home
-                                    <span class="sr-only">(current)</span>
+                            <li className={`nav-item  /workspace`} >
+                                <Link class="nav-link" to="/workspace">
+                                    Workspace
+                                    <span className="sr-only">(current)</span>
+                                </Link>
+                            </li>
+                            <li className={`nav-item  /past-experiments`} >
+                                <Link class="nav-link" to="/past-experiments">
+                                    Past Experiments
+                                    <span className="sr-only">(current)</span>
+                                </Link>
+                            </li>
+                            <li className={`nav-item  /groups`} >
+                                <Link class="nav-link" to="/groups">
+                                    Groups
+                                    <span className="sr-only">(current)</span>
+                                </Link>
+                            </li>
+                            <li className={`nav-item  /file-upload`} >
+                                <Link class="nav-link" to="/file-upload">
+                                    File Upload
+                                    <span className="sr-only">(current)</span>
                                 </Link>
                             </li>
                         </ul>
