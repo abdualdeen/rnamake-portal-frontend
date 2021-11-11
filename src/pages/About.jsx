@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import "./About.css";
 import helix from "../graphics/helix.svg";
 import unl from "../images/unl-logo.png";
@@ -13,13 +12,13 @@ function About() {
   return (
     <div className="container-center-horizontal">
       <div className="desktop-about screen">
-        <FlexRow>
-          <FlexCol>
-            <TopTab>
-              <AboutTheToolkit>About</AboutTheToolkit>
-              <Helix src={helix} align-items="center" />
-            </TopTab>
-            <Text28>
+        <div className="flex-row">
+          <div className="flex-column">
+            <div className="top-tab">
+              <div className="about">About</div>
+              <img className="helix" src={helix} align-items="center" />
+            </div>
+            <p className="about-text">
               RNAMake is a toolkit for designing and optimizing RNA 3D structure. It allows the alignment between RNA
               motifs. These motif are small modular peices of RNA that are believed to fold independently, thus
               attaching them together with helix flanking both sides allows users of RNAMake to build large segments of
@@ -58,154 +57,32 @@ function About() {
               <br />
               Ut assumenda magnam id unde id dolor. Reprehenderit qui eum vel non eum sed. Eius in provident ut nam
               voluptas. Laborum ipsum fuga quas corrupti. Est consequuntur eos fugiat et laboriosam.
-            </Text28>
-          </FlexCol>
-          <LinkGroup>
-            <Acknowledgements></Acknowledgements>
+            </p>
+          </div>
+          <div className="link-group">
+            <div className="ack">Acknowledgements</div>
             <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2030508" target="_blank" rel="noreferrer">
-              <paTh src={path} />
+              <img className="path" src={path} />
             </a>
             <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1148698" target="_blank" rel="noreferrer">
-              <Osg src={osg} />
+              <img className="osg" src={osg} />
             </a>
             <a href="https://www.nsf.gov/" target="_blank" rel="noreferrer">
-              <Nsf src={nsf} />
+              <img className="nsf" src={nsf} />
             </a>
             <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1053575" target="_blank" rel="noreferrer">
-              <Xsede src={xsede} />
+              <img className="xsede" src={xsede} />
             </a>
             <a href="https://www.unl.edu" target="_blank" rel="noreferrer">
-              <UNL src={unl} />
+              <img className="UNL" src={unl} />
             </a>
-            <Text29></Text29>
-          </LinkGroup>
-        </FlexRow>
+            <p className="ack-text">This work was completed utilizing the Holland Computing Center of the
+             University of Nebraska, which receives support from the Nebraska Research Initiative.</p>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
-
-const FlexRow = styled.div`
-  height: 1063px;
-  display: flex;
-  align-items: flex-start;
-  min-width: 1364px;
-`;
-
-const FlexCol = styled.div`
-  width: 732px;
-  margin-top: 3.66px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 972px;
-`;
-
-const TopTab = styled.div`
-  width: 609px;
-  height: 138px;
-  position: relative;
-  margin-left: 22.81px;
-  text-align: center;
-  align-items: center;
-`;
-
-const AboutTheToolkit = styled.div`
-  font-family: 'Chivo';
-  font-size: 48px;
-  color: #4C5F94;
-  position: absolute;
-  top: 54px;
-  left: 270px;
-  text-align: center;
-  letter-spacing: 0;
-`;
-
-const Helix = styled.img`
-  position: absolute;
-  width: 121px;
-  height: 138px;
-  top: 0;
-  left: 0;
-`;
-
-const Text28 = styled.div`
-  width: 732px;
-  min-height: 811px;
-  margin-top: 23px;
-  font-family: 'Chivo';
-  font-weight: 400;
-  color: var(--charade);
-  font-size: var(--font-size-m);
-  letter-spacing: 0;
-`;
-
-const LinkGroup = styled.div`
-  width: 548px;
-  margin-left: 84px;
-  display: flex;
-  flex-direction: column;
-  padding: 56px 59px;
-  align-items: flex-start;
-  min-height: 1063px;
-  background-color: var(--mystic);
-`;
-
-const Acknowledgements = styled.div`
-  font-family: 'Chivo';
-  width: 392px;
-  min-height: 43px;
-  align-self: flex-end;
-  letter-spacing: 0;
-`;
-
-
-const Osg = styled.img`
-  width: 174px;
-  height: 100px;
-  margin-top: 35px;
-  margin-left: 28.87px;
-  object-fit: cover;
-  cursor: pointer;
-`;
-
-const Nsf = styled.img`
-  width: 100px;
-  height: 100px;
-  margin-top: 29px;
-  margin-left: 28.97px;
-  object-fit: cover;
-  cursor: pointer;
-`;
-
-const Xsede = styled.img`
-  width: 262px;
-  height: 100px;
-  margin-top: 44px;
-  margin-left: 28.78px;
-  object-fit: cover;
-  cursor: pointer;
-`;
-
-const UNL = styled.img`
-  width: 253px;
-  height: 100px;
-  margin-top: 46px;
-  margin-left: 28.88px;
-  object-fit: cover;
-  cursor: pointer;
-`;
-
-const Text29 = styled.p`
-  width: 401px;
-  min-height: 75px;
-  align-self: flex-end;
-  margin-top: 62px;
-  font-family: 'Chivo';
-  font-weight: 700;
-  color: var(--charade);
-  font-size: var(--font-size-xs);
-  letter-spacing: 0;
-`;
 
 export default About;
