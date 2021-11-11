@@ -2,7 +2,11 @@
 
 1. `git pull` to pull the latest changes before adding your changes.
 
-2. `git checkout -b issue#-quick-description` checkout your changes to a new branch. 
+2. `git checkout -b (branch type)/issue#-quick-description` checkout your changes to a new branch. 
+
+    branch types: feature, bugfix, refactor
+    
+    example command: `git checkout -b refactor/73-refactoring-workspace-page`
 
 3. `git add .` to add all the files you made changes to or files you've added/removed. 
 
