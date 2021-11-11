@@ -1,5 +1,5 @@
 import React from 'react';
-import './Workspace.css';
+import './styles/Workspace.css';
 import small_RNA_SVG from '../graphics/small_RNA_SVG.svg';
 import { Button } from '../components/Button';
 import { useHistory } from 'react-router-dom';

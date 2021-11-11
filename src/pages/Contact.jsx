@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import "./Contact.css";
+import "./styles/Contact.css";
 import helix from "../graphics/helix.svg";
 import hongfeng from "../images/hongfeng.png";
 import weitzel from "../images/weitzel.png";

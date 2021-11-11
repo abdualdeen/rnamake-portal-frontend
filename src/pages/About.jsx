@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import "./About.css";
+import "./styles/About.css";
 import helix from "../graphics/helix.svg";
 import unl from "../images/unl-logo.png";
 import nsf from "../images/nsf.png";
