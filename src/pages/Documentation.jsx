@@ -27,7 +27,7 @@ function Documentation() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Partnership to Advance Throughput Computing
+                                Partnership to Advance Throughout Computing
                             </a>
                             <br></br>
                             <a
