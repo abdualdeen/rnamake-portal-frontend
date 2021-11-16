@@ -8,15 +8,13 @@ function Documentation() {
             <div className="container">
                 <div className="row align-items-center my-5">
                     
-                    <div className="col-lg-8">
-                        {/* <a>
-                            Documentation
-                        </a> */}
+                    <div className="col-lg-12">
                         <h1 className="font-weight-light">Acknowledgements</h1>
+                        <br></br>
                         <p>
                             <a
                                 className="App-link"
-                                href="https://nsf.gov/awardsearch/showAward?AWD_ID=1148698"
+                                href="https://opensciencegrid.org/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -25,7 +23,7 @@ function Documentation() {
                             <br></br>
                             <a
                                 className="App-link"
-                                href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2030508"
+                                href="https://opensciencegrid.org/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -34,7 +32,7 @@ function Documentation() {
                             <br></br>
                             <a
                                 className="App-link"
-                                href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1053575"
+                                href="https://www.xsede.org/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -52,7 +50,7 @@ function Documentation() {
                             <br></br>
                             <a
                                 className="App-link"
-                                href="https://hcc.unl.edu/hcc"
+                                href="https://hcc.unl.edu/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -67,7 +65,6 @@ function Documentation() {
                             >
                                 Nebraska Research Initiative
                             </a>
-                            <br></br>
                         </p>
                     </div>
                 </div>
