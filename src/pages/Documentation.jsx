@@ -44,7 +44,7 @@ function Documentation() {
                     <br />
                     <a
                         className="App-link"
-                        href="https://opensciencegrid.org/"
+                        href="https://path-cc.io/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
