@@ -65,22 +65,6 @@ function About() {
   );
 }
 
-// const FlexRow = styled.div`
-//   height: 1063px;
-//   display: flex;
-//   align-items: flex-start;
-//   min-width: 1364px;
-// `;
-
-// const FlexCol = styled.div`
-//   width: 732px;
-//   margin-top: 3.66px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   min-height: 972px;
-// `;
-
 const TopTab = styled.div`
   width: 609px;
   height: 138px;
