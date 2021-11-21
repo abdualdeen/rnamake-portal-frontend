@@ -2,19 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import "./About.css";
 import helix from "../graphics/helix.svg";
-import unl from "../images/unl-logo.png";
-import nsf from "../images/nsf.png";
-import osg from "../images/osg.png";
-import path from "../images/paTh.png";
-import xsede from "../images/xsede.png";
 
 function About() {
 
   return (
-    <div className="container-center-horizontal">
-      <div className="desktop-about screen">
-        <FlexRow>
-          <FlexCol>
+    <div className="desktop-about screen">
+        <div className="container">
+          <div style = {{
+            position: 'absolute', left: '27.5%'
+          }}>
+        {/* <FlexRow>
+          <FlexCol> */}
             <TopTab>
               <AboutTheToolkit>About</AboutTheToolkit>
               <Helix src={helix} align-items="center" />
@@ -59,47 +57,29 @@ function About() {
               Ut assumenda magnam id unde id dolor. Reprehenderit qui eum vel non eum sed. Eius in provident ut nam
               voluptas. Laborum ipsum fuga quas corrupti. Est consequuntur eos fugiat et laboriosam.
             </Text28>
-          </FlexCol>
-          <LinkGroup>
-            <Acknowledgements></Acknowledgements>
-            <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2030508" target="_blank" rel="noreferrer">
-              <paTh src={path} />
-            </a>
-            <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1148698" target="_blank" rel="noreferrer">
-              <Osg src={osg} />
-            </a>
-            <a href="https://www.nsf.gov/" target="_blank" rel="noreferrer">
-              <Nsf src={nsf} />
-            </a>
-            <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1053575" target="_blank" rel="noreferrer">
-              <Xsede src={xsede} />
-            </a>
-            <a href="https://www.unl.edu" target="_blank" rel="noreferrer">
-              <UNL src={unl} />
-            </a>
-            <Text29></Text29>
-          </LinkGroup>
-        </FlexRow>
+          {/* </FlexCol>
+        </FlexRow> */}
+        </div>
       </div>
     </div>
   );
 }
 
-const FlexRow = styled.div`
-  height: 1063px;
-  display: flex;
-  align-items: flex-start;
-  min-width: 1364px;
-`;
+// const FlexRow = styled.div`
+//   height: 1063px;
+//   display: flex;
+//   align-items: flex-start;
+//   min-width: 1364px;
+// `;
 
-const FlexCol = styled.div`
-  width: 732px;
-  margin-top: 3.66px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 972px;
-`;
+// const FlexCol = styled.div`
+//   width: 732px;
+//   margin-top: 3.66px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   min-height: 972px;
+// `;
 
 const TopTab = styled.div`
   width: 609px;
@@ -137,74 +117,6 @@ const Text28 = styled.div`
   font-weight: 400;
   color: var(--charade);
   font-size: var(--font-size-m);
-  letter-spacing: 0;
-`;
-
-const LinkGroup = styled.div`
-  width: 548px;
-  margin-left: 84px;
-  display: flex;
-  flex-direction: column;
-  padding: 56px 59px;
-  align-items: flex-start;
-  min-height: 1063px;
-  background-color: var(--mystic);
-`;
-
-const Acknowledgements = styled.div`
-  font-family: 'Chivo';
-  width: 392px;
-  min-height: 43px;
-  align-self: flex-end;
-  letter-spacing: 0;
-`;
-
-
-const Osg = styled.img`
-  width: 174px;
-  height: 100px;
-  margin-top: 35px;
-  margin-left: 28.87px;
-  object-fit: cover;
-  cursor: pointer;
-`;
-
-const Nsf = styled.img`
-  width: 100px;
-  height: 100px;
-  margin-top: 29px;
-  margin-left: 28.97px;
-  object-fit: cover;
-  cursor: pointer;
-`;
-
-const Xsede = styled.img`
-  width: 262px;
-  height: 100px;
-  margin-top: 44px;
-  margin-left: 28.78px;
-  object-fit: cover;
-  cursor: pointer;
-`;
-
-const UNL = styled.img`
-  width: 253px;
-  height: 100px;
-  margin-top: 46px;
-  margin-left: 28.88px;
-  object-fit: cover;
-  cursor: pointer;
-`;
-
-const Text29 = styled.p`
-  width: 401px;
-  min-height: 75px;
-  align-self: flex-end;
-  margin-top: 62px;
-  font-family: 'Chivo';
-  font-weight: 700;
-  color: var(--charade);
-  font-size: var(--font-size-xs);
   letter-spacing: 0;
 `;
 
