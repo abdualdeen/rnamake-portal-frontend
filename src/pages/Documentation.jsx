@@ -3,7 +3,7 @@ import styled from "styled-components";
 import unl from "../images/unl-logo.png";
 import nsf from "../images/nsf.png";
 import osg from "../images/osg.png";
-import path from "../images/paTh.png";
+import paTh from "../images/paTh.png";
 import xsede from "../images/xsede.png";
 import corner_swoosh from '../graphics/corner_swoosh.svg';
 
@@ -17,12 +17,13 @@ function Documentation() {
                     <Osg src={osg} />
                 </a>
                 <a href="https://path-cc.io/" target="_blank" rel="noreferrer">
-                    <paTh src={path} />
+                    <img src={paTh} />
                 </a>
+                <br />
                 <a href="https://xsede.org/" target="_blank" rel="noreferrer">
                     <Xsede src={xsede} />
                 </a>
-                    <a href="https://www.nsf.gov/" target="_blank" rel="noreferrer">
+                <a href="https://www.nsf.gov/" target="_blank" rel="noreferrer">
                     <Nsf src={nsf} />
                 </a>
                 <a href="https://www.hcc.unl.edu/" target="_blank" rel="noreferrer">
