@@ -1,42 +1,42 @@
 .desktop-web-home {
-  align-items: flex-start;
-  background-color: var(--wild-sand);
-  display: flex;
+  align-items: center;
+  background-image: "../graphics/HomeSwoop.svg";
+  display: block;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
+}
+
+.text-group {
+  align-items: center;
+  text-align: center;
+  margin-left: 10%;
 }
 
 .rna-title {
   font-family: 'Chivo';
   font-size: 64px;
-  position: absolute;
   color: #4C5F94;
-  width: 574px;
+  width: 50%;
   top: 120px;
-  left: 15%;
   text-align: center;
 }
 
 .toolkit {
   font-family: 'Chivo';
   font-size: 24px;
-  position: absolute;
   font-weight: bold;
-  width: 292px;
+  width: 50%;
   top: 225px;
-  left: 25%;
   text-align: center;
   letter-spacing: 0;
 }
 
 .main-text {
   font-family: 'Chivo';
-  position: absolute;
   font-size: 16px;
-  width: 700px;
+  width: 50%;
   top: 320px;
-  left: 12.5%;
   font-weight: 400;
   color: var(--black);
   font-size: var(--font-size-m);
