@@ -20,10 +20,6 @@ function Home() {
                           type="button"
                           buttonStyle="btn--primary--solid"
                           buttonSize="btn--large">Login</Button>
-              <Button className="register-btn" onClick={() => {}}
-                          type="button"
-                          buttonStyle="btn--primary--solid"
-                          buttonSize="btn--large">Register</Button>
             </div>
           </div>
           <img className="swoop" src={homeSwoop}/>

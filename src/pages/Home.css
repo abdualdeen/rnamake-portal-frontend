@@ -48,12 +48,13 @@
 .swoop {
   position: relative;
   width: 100%;
-  top: -500px;
+  top: -600px;
   z-index: -1;
 }
 
 .home-btns {
-  display: flex;
+  position: relative;
+  padding-right: 650px;
   padding-top: 50px;
 }
 
