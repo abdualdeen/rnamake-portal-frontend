@@ -1,9 +1,8 @@
 .desktop-web-home {
   align-items: center;
-  background-image: "../graphics/HomeSwoop.svg";
   display: block;
   height: 100%;
-  overflow: visible;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -46,16 +45,20 @@
 }
 
 .swoop {
+  object-fit: fill;
   position: relative;
+  overflow: hidden;
   width: 100%;
   top: -600px;
   z-index: -1;
 }
 
 .home-btns {
-  position: relative;
-  padding-right: 650px;
+  position: absolute;
+  left: 0px;
   padding-top: 50px;
+  margin-left: 10%;
+  align-items: center;
 }
 
 .register-btn {

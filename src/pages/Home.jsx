@@ -14,7 +14,7 @@ function Home() {
                These motif are small modular pieces of RNA that are believed to fold independently, thus attaching them together 
                with helix flanking both sides allows users of RNAMake to build large segments of RNA with a high success rate of 
                forming the predicted structure in vitro.<br /></div>
-            <div className="main-text" align-text="center"><br />Create an account or log in to access the application<br></br></div>
+            <div className="main-text" align-text="justify"><br />Create an account or log in to access the application<br /></div>
             <div className="home-btns">
               <Button onClick={() => {}}
                           type="button"
