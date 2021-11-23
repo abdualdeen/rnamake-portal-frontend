@@ -46,10 +46,18 @@
 }
 
 .swoop {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0;
+  top: -500px;
   z-index: -1;
+}
+
+.home-btns {
+  display: flex;
+  padding-top: 50px;
+}
+
+.register-btn {
+  position: relative;
+  padding-left: 100px;
 }
