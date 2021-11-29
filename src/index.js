@@ -21,6 +21,7 @@ export { default as PastExperiments } from './pages/PastExperiments';
 export { default as FileUpload } from './pages/FileUpload';
 export { default as NewExperiment } from './pages/NewExperiment';
 export { default as Groups } from './pages/Groups';
+export { default as Login} from './pages/Login';
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
