@@ -1,12 +1,12 @@
 ﻿import React, { useEffect, useState } from 'react';
-//import Table from '@mui/material/Table';
-//import TableBody from '@mui/material/TableBody';
-//import TableCell from '@mui/material/TableCell';
-//import TableContainer from '@mui/material/TableContainer';
-//import TableHead from '@mui/material/TableHead';
-//import TableRow from '@mui/material/TableRow';
-//import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-//import Paper from '@mui/material/Paper';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import Paper from '@mui/material/Paper';
 import corner_swoosh from '../graphics/corner_swoosh.svg'
 
 //function createData(name, application, user, creationTime, status, actions) {
@@ -22,59 +22,81 @@ import corner_swoosh from '../graphics/corner_swoosh.svg'
 //];
 
 function BasicTable() {
-  const [error, setError] = useState(null);
+  //const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("localhost:8000/api/experiment-search/")
-    .then(res => res.json())
+    fetch("http://localhost:8000/api/experiment-search/",{
+      credentials: 'include',
+      mode: 'cors',
+      method: 'GET',
+    })
+    .then(result => result.json())
     .then(
       (result)=> {
-        setIsLoaded(true);
         setItems(result);
-      },
-      (error) =>{
         setIsLoaded(true);
-        setError(error);
       }
     )
   },[])
 
-  if(error)
-  {
-    return <div> Errpr: {error.message}</div>;
-  }
-  else if (!isLoaded)
+ if (!isLoaded)
   {
     return <div>Loading...</div>;
   }
   else
   {
+    console.log(items['results'])
     return (
-      <ul>
-        {items.map(item=> (
-          <li key={item.experimentId}>{item.creationTime} {item.name}</li>
-        ))}
-      </ul>
-    )
+      <TableContainer component={Paper}>
+        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <TableHead className="PastExperimentsHeader">
+            <TableRow>
+              <TableCell>Name</TableCell>
+              <TableCell align="right">Application</TableCell>
+              <TableCell align="right">User</TableCell>
+              <TableCell align="right">Creation Time</TableCell>
+              <TableCell align="right">Status</TableCell>
+              <TableCell align="right">Actions</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {(items['results']).map((row) => (
+              <TableRow
+                key={row.name}
+                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              >
+                <TableCell component="th" scope="row">
+                  <a href="#">{row.name}</a>
+                </TableCell>
+                <TableCell align="right">{row.application}</TableCell>
+                <TableCell align="right">{row.userName}</TableCell>
+                <TableCell align="right">{row.creationTime}</TableCell>
+                <TableCell align="right">{row.experimentStatus}</TableCell>
+                <TableCell align="right"><a href="#">{row.actions} <ContentCopyIcon fontSize="inherit"/></a></TableCell> {/* eventually replace with dynamic changing icon */}
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    );
   }
-  
 }
 
 function PastExperiments() {
-    return (
-        <div className="past-experiments">
-            <div className="container">
-                <div>
-                    <h1 className="font-weight-light">Past Experiments</h1>
-                    <BasicTable></BasicTable>
-                </div>
-            </div>
-            <br></br>
-            <img src={corner_swoosh} alt="" width='100%'/>
-        </div>
-    );
+  return (
+      <div className="past-experiments">
+          <div className="container">
+              <div>
+                  <h1 className="font-weight-light">Past Experiments</h1>
+                  <BasicTable></BasicTable>
+              </div>
+          </div>
+          <br></br>
+          <img src={corner_swoosh} alt="" width='100%'/>
+      </div>
+  );
 }
 
 export default PastExperiments;

@@ -9,7 +9,8 @@ async function loginUser(credentials) {
     mode: 'cors',
     body: new URLSearchParams(credentials)
   })
-    .then(data => data.json())
+    .then(response => response.json())
+    .then(data => console.log(data))
  }
 
 export default function Login() {
@@ -19,13 +20,12 @@ export default function Login() {
   const cookies = new Cookies();
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/get-csrf-token/")
+    fetch("http://localhost:8000/api/get-csrf-token")
     .then(res => res.json())
     .then(
       (result)=> {
         setCsrfToken(result.csrftoken);
         cookies.set('csrftoken',result.csrftoken,{path: '/'});
-        console.log(cookies.get('csrftoken'));
       })
   },[])
 
