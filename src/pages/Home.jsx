@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 import styled from "styled-components";
 import "./Home.css";
-import swoop from "../graphics/HomeSwoop.svg";
+// import swoop from "../graphics/HomeSwoop.svg";
 import login from "../graphics/LogInButton.svg";
 import register from "../graphics/RegisterButton.svg";
 
@@ -24,7 +24,7 @@ function Home() {
           </div>
           
       </div>
-      <Swoop src={swoop} />
+      {/* <Swoop src={swoop} /> */}
     </div>
     );
 }
@@ -45,14 +45,14 @@ const RegisterButton = styled.img`
   left: 467px;
 `;
 
-const Swoop = styled.img`
-  position: absolute;
-  width: 100%;
-  height: 920px;
-  top: 0px;
-  left: 0;
-  z-index: -1;
-`;
+// const Swoop = styled.img`
+//   position: absolute;
+//   width: 100%;
+//   height: 920px;
+//   top: 0px;
+//   left: 0;
+//   z-index: -1;
+// `;
 
 const Title = styled.h1`
   font-family: 'Chivo';
