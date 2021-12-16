@@ -3,7 +3,7 @@ import { Link, withRouter } from 'react-router-dom';
 
 function Navigation() {
     return (
-        <div className="navigation">
+        <div className="navigation" width="100%">
             <nav className="navbar navbar-expand bg-transparent">
                 <div className="container">
                     <Link class="navbar-brand" to="/">

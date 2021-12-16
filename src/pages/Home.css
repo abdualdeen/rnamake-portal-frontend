@@ -1,14 +1,63 @@
 .desktop-web-home {
-  align-items: flex-start;
-  background-color: var(--wild-sand);
-  display: flex;
+  align-items: center;
+  background-image: "../graphics/HomeSwoop.svg";
+  display: block;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
 }
 
-.main-text {
-  width: 66%;
-  height: 100%;
+.text-group {
   align-items: center;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.rna-title {
+  font-family: 'Chivo';
+  font-size: 64px;
+  color: #4C5F94;
+  width: 50%;
+  top: 120px;
+  text-align: center;
+}
+
+.toolkit {
+  font-family: 'Chivo';
+  font-size: 24px;
+  font-weight: bold;
+  width: 50%;
+  top: 225px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.main-text {
+  font-family: 'Chivo';
+  font-size: 16px;
+  width: 50%;
+  top: 320px;
+  font-weight: 400;
+  color: var(--black);
+  font-size: var(--font-size-m);
+  text-align: justify;
+  letter-spacing: 0;
+  text-indent: 50px;
+}
+
+.swoop {
+  position: relative;
+  width: 100%;
+  top: -500px;
+  z-index: -1;
+}
+
+.home-btns {
+  display: flex;
+  padding-top: 50px;
+}
+
+.register-btn {
+  position: relative;
+  padding-left: 100px;
 }
