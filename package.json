@@ -18,7 +18,8 @@
     "react-scripts": "^5.0.0",
     "react-window": "^1.8.6",
     "styled-components": "^5.3.3",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "webpack-bundle-tracker": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
