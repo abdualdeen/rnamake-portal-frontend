@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import "./Contact.css";
+// import "./Contact.css";
 import helix from "../graphics/helix.svg";
 import hongfeng from "../images/hongfeng.png";
 import weitzel from "../images/weitzel.png";
@@ -10,17 +10,19 @@ import corner_swoosh from "../graphics/corner_swoosh.svg";
 function Contact() {
 
   return (
-    <div className="container-center-horizontal">
-      <div className="desktop-contact screen">
+    <div className="contact">
+      <div className="container">
         <div className="title-box">
-          <div className="contacts-title">Contacts</div>
-          <img className="helix" src={helix} />
+          <Contacts>
+            <img className="helix" src={helix}/>
+            Contacts
+          </Contacts>
         </div>
         <div className="body-text">Eos aut doloremque fugit iste officia sed quisquam delectus. Voluptatem quaerat consequatur 
           voluptatem corporis et aspernatur nam. Qui est corrupti quibusdam explicabo recusandae.
            Quo dolor ea quos doloribus corrupti vero. Dignissimos molestiae explicabo totam non neque. 
            Eum velit amet perferendis sed ipsa doloremque.</div>
-        <OverlapGroup5>
+        {/* <OverlapGroup5>
           <img className="weitzel" src={weitzel} />
           <img className="hongfeng" src={hongfeng} />
           <OverlapGroup3>
@@ -58,13 +60,54 @@ function Contact() {
             </Group13>
           </OverlapGroup3>
         </OverlapGroup5>
-      </div>
-      <img className="swoosh" src={corner_swoosh} />
+      </div> */}
+
+        <div style = {{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}>
+          <div>
+            <Yesselman src = {yesselman}/>
+            <br/>
+            <a href='jyesselm@unl.edu' target='blank' rel='noreferrer'>
+              jyesselm@unl.edu
+            </a>
+            <br/>
+            Assistant Professor of Chemistry
+          </div>
+        
+          <div>
+            <Weitzel src = {weitzel}/>
+            <br/>
+            <a href='dweitzel@unl.edu' target='blank' rel='noreferrer'>
+              dweitzel@unl.edu
+            </a>
+            <br/>
+            Research Assistant Professor of
+            <br/>
+            Computer Science and Engineering
+          </div>
+
+          <div>
+            <Hongfeng src = {hongfeng}/>
+            <br/>
+            <a href='hfyum@unl.edu' target='blank' rel='noreferrer'>
+              hfyu@unl.edu
+            </a>
+            <br/>
+            Associate Professor of Computer
+            <br/>
+            Science and Engineering
+          </div>
+        </div>
+        </div>
+      <img src={corner_swoosh} alt="" width='100%'/>
     </div>
   );
 }
 
-const OverlapGroup5 = styled.div`
+{/* const OverlapGroup5 = styled.div`
   width: 1440px;
   height: 683px;
   position: relative;
@@ -125,6 +168,59 @@ const OverlapGroup2 = styled.div`
   position: relative;
   margin-top: 24px;
   margin-right: 6px;
+`; */}
+
+{/* const FlexRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+`;
+
+const FlexCol = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+`; */}
+
+const Yesselman = styled.img`
+  width: 220px;
+  height: 220px;
+  margin-top: 12.5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  object-fit: cover;
+  cursor: pointer;
+`;
+
+const Weitzel = styled.img`
+  width: 220px;
+  height: 220px;
+  margin-top: 35px;
+  margin-left: 50px;
+  margin-right: 50px;
+  object-fit: cover;
+  cursor: pointer;
+`;
+
+const Hongfeng = styled.img`
+  width: 220px;
+  height: 220px;
+  margin-top: 35px;
+  margin-left: 50px;
+  margin-right: 50px;
+  object-fit: cover;
+  cursor: pointer;
+`;
+
+const Contacts = styled.div`
+  font-family: 'Chivo';
+  font-size: 48px;
+  color: #4C5F94;
+  position: absolute, left: 50%;
+  top: 54px;
+  left: 270px;
+  text-align: center;
+  letter-spacing: 0;
 `;
 
 export default Contact;
