@@ -9,3 +9,116 @@
   width: 1440px;
 }
 
+.swoosh {
+  position: absolute;
+  width: 100%;
+  height: 408px;
+  top: 600px;
+  left: 0;
+  z-index: -1; 
+}
+
+.name {
+  font-family: 'Chivo';
+  position: absolute;
+  width: 289px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.contacts-title {
+  font-family: 'Chivo';
+  font-size: 48px;
+  position: absolute;
+  top: 45px;
+  left: 108px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #4C5F94;
+}
+
+.email {
+  font-family: 'Chivo';
+  color: #000000;
+  width: 289px;
+  min-height: 47px;
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.role {
+  font-family: 'Chivo';
+  position: absolute;
+  width: 240px;
+  top: 30px;
+  left: 9px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.weitzel {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 616px;
+  object-fit: cover;
+}
+
+.yesselman {
+  width: 200px;
+  height: 200px;
+  margin-right: 5px;
+  object-fit: cover;
+}
+
+.hongfeng {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 1037px;
+  object-fit: cover;
+}
+
+.lab {
+  font-family: 'Chivo';
+  width: 289px;
+  min-height: 47px;
+  margin-top: 41px;
+  margin-right: 6px;
+  text-align: center;
+  letter-spacing: 0;
+  text-decoration: underline;
+}
+
+.body-text {
+  font-family: 'Chivo';
+  width: 732px;
+  min-height: 121px;
+  margin-top: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #232C33;
+}
+
+.helix {
+  position: absolute;
+  width: 121px;
+  height: 138px;
+  top: 0;
+  left: 0;
+}
+
+.title-box {
+  width: 376px;
+  height: 138px;
+  position: relative;
+  margin-top: 13px;
+  margin-right: 44.19px;
+}
