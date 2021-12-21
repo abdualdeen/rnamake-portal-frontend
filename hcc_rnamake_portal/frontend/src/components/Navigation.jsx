@@ -11,8 +11,8 @@ function Navigation() {
                     </Link>
                     <div>
                         <ul className="navbar-nav ml-auto">
-                            <li className={`nav-item  /workspace`} >
-                                <Link class="nav-link" to="/workspace">
+                            <li className={`nav-item  /`} >
+                                <Link class="nav-link" to="/">
                                     Workspace
                                     <span className="sr-only">(current)</span>
                                 </Link>
