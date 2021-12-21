@@ -11,21 +11,6 @@ function Navigation() {
                     </Link>
                     <div>
                         <ul className="navbar-nav ml-auto">
-                            <li className={`nav-item  /about`}>
-                                <Link class="nav-link" to="/about">
-                                    About
-                                </Link>
-                            </li>
-                            <li className={`nav-item  /contact`}>
-                                <Link class="nav-link" to="/contact">
-                                    Contact
-                                </Link>
-                            </li>
-                            <li className={`nav-item  /documentation`}>
-                                <Link class="nav-link" to="/documentation">
-                                    Documentation
-                                </Link>
-                            </li>
                             <li className={`nav-item  /workspace`} >
                                 <Link class="nav-link" to="/workspace">
                                     Workspace
@@ -35,12 +20,6 @@ function Navigation() {
                             <li className={`nav-item  /past-experiments`} >
                                 <Link class="nav-link" to="/past-experiments">
                                     Past Experiments
-                                    <span className="sr-only">(current)</span>
-                                </Link>
-                            </li>
-                            <li className={`nav-item  /groups`} >
-                                <Link class="nav-link" to="/groups">
-                                    Groups
                                     <span className="sr-only">(current)</span>
                                 </Link>
                             </li>
