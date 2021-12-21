@@ -1,4 +1,4 @@
-import React from 'react';
+import {React,useEffect} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Navigation,  Workspace, PastExperiments, NewExperiment, FileUpload } from './index.js';
 // import helix from './Graphics/helix.svg';
@@ -6,6 +6,13 @@ import './App.css';
 
 
 function App() {
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.type="script";
+        script.src = "~/HCC-rnamake-frontend/hcc_rnamake_portal/frontend/src/airavata-api.js";
+        script.async = true;
+        document.body.appendChild(script);
+      }, []);
   return (
       <div className="App">
           <Router>
