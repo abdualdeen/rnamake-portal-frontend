@@ -59,9 +59,9 @@
 ### Rebasing master from develop
 
 1. `git checkout dev`
-2. `git pull origin develop`
+2. `git pull origin dev`
 3. `git checkout main`
-4. `git rebase develop`
+4. `git rebase dev`
 5. Fix conflicts if they exist:
     * `git add -A` add the fixed files that had conflicts
     * `git rebase --continue` 
