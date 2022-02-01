@@ -9,6 +9,7 @@ const STYLES = [
 const SIZES = ["btn--medium", "btn--large", 'btn--xlarge'];
 
 export const Button = ({
+  id,
   children,
   type,
   onClick,
@@ -22,6 +23,7 @@ export const Button = ({
 
   return (
     <button
+      id={id}
       className={`btn ${checkButtonStyle} ${checkButtonSize}`}
       onClick={onClick}
       type={type}
@@ -37,4 +39,5 @@ Button.propTypes = {
     type: PropTypes.string,
     onClick: PropTypes.func,
     children: PropTypes.object,
+    id: PropTypes.string
 };
