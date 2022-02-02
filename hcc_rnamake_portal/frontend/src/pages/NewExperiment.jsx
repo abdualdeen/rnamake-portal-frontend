@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -24,6 +24,7 @@ function Copyright() {
 
 const steps = ['Name', 'PDB Settings', 'Review'];
 
+
 function getStepContent(step) {
   switch (step) {
     case 0:
@@ -43,13 +44,34 @@ function getStepContent(step) {
   }
 }
 
+
+
 const theme = createTheme();
+
+  async function submitExperiment(name) {
+    // Construct experiment object
+    const experimentData = await window.AiravataAPI.utils.ExperimentUtils.createExperiment({
+        applicationInterfaceId: "Test_71e1a6f2-00d4-4cbe-9a90-b4cbb2f39010",
+        computeResourceName: "js-168-229.jetstream-cloud.org",
+        experimentName: "Test " + name,
+    });
+    // Save experiment
+    console.log("submitted?");
+    const experiment = await window.AiravataAPI.services.ExperimentService.create({ data: experimentData });
+    // Launch experiment
+    await window.AiravataAPI.services.ExperimentService.launch({ lookup: experiment.experimentId });
+  };
 
 export default function Checkout() {
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
     setActiveStep(activeStep + 1);
+    console.log(window);
+    if(activeStep===2)
+    {
+      submitExperiment("Static experiment name");
+    }
   };
 
   const handleBack = () => {
